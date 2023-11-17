@@ -1,0 +1,172 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+}
+
+.a-tags {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "contact info about home gallery submit-cat";
+    grid-area: 4 / 2 / 5 / 9;
+    font-size: 20px;
+
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.info {
+    grid-area: info;
+}
+
+.about {
+    grid-area: about;
+}
+
+.home {
+    grid-area: home;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.submit-cat {
+    grid-area: submit-cat;
+}
+
+.logo-placeholder {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". logo text-logo text-logo text-logo .";
+    grid-area: 1 / 1 / 3 / 10;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+
+.text-logo {
+    grid-area: text-logo;
+    text-align: center;
+
+}
+
+.galleryWrapper {
+    grid-area: 6 / 2 / 14 / 9;
+}
+
+.catWhite {
+    grid-area: 6 / 2 / 10 / 6;
+}
+
+.catBlack {
+    grid-area: 10 / 2 / 14 / 5;
+}
+
+.catGrey {
+    grid-area: 10 / 5 / 14 / 9;
+}
+
+.catRandom {
+    grid-area: 6 / 6 / 10 / 9;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "about-us about-us . copyright copyright";
+    grid-area: 15 / 1 / 16 / 10;
+}
+
+.about-us {
+    grid-area: about-us;
+}
+
+.copyright {
+    grid-area: copyright;
+}
+
+.text-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .a-tags {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* Stack the navbar items vertically */
+        grid-template-areas:
+            "contact"
+            "info"
+            "about"
+            "home"
+            "gallery"
+            "submit-cat";
+        gap: 13px;
+        justify-items: end;
+
+    }
+}
+
+.logo-placeholder {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Adjust columns for logo and text-logo */
+    grid-template-areas:
+        ". logo ."
+        ". text-logo .";
+    text-align: center;
+    font-size: 36px;
+}
+
+.a-tags div>a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    /* Default background color */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.a-tags div>a:hover {
+    color: #FFDD0B;
+    transition: 0.3s;
+}
