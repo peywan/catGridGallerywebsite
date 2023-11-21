@@ -197,6 +197,7 @@ div img {
     max-width: 100%;
     padding: 20px;
     border-radius: 200px;
+    height: fit-content;
 }
 
 .galleryWrapper {
