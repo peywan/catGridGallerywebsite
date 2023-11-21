@@ -18,7 +18,7 @@ body {
 
 }
 
-.a-tags {
+.links {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
@@ -130,7 +130,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .a-tags {
+    .links {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         /* Stack the navbar items vertically */
@@ -157,7 +157,7 @@ body {
     font-size: 36px;
 }
 
-.a-tags div>a {
+.links div>a {
     text-decoration: none;
     color: black;
     background-color: white;
@@ -166,7 +166,7 @@ body {
     /* Smooth transition for hover effect */
 }
 
-.a-tags div>a:hover {
+.links div>a:hover {
     color: #FFDD0B;
     transition: 0.3s;
 }
@@ -187,4 +187,28 @@ body {
 
 div img {
     max-width: 100%;
+}
+
+.galleryWrapper {
+    margin: 0px;
+    gap: 0px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media all and (min-width: 1024px) {
+    .links div>a {
+        font-size: 40px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+@media all and (min-width: 354px) {
+    .links div>a {
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 }
