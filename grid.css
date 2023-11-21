@@ -170,3 +170,21 @@ body {
     color: #FFDD0B;
     transition: 0.3s;
 }
+
+.footer {
+    background-color: grey;
+}
+
+.footer div {
+    text-align: center;
+    color: #FFDD0B;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 30px auto;
+}
+
+div img {
+    max-width: 100%;
+}
