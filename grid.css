@@ -28,6 +28,8 @@ body {
         "contact info about home gallery submit-cat";
     grid-area: 4 / 2 / 5 / 9;
     font-size: 20px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', sans-serif;
 
 }
 
@@ -74,12 +76,18 @@ body {
     border-radius: 20px;
     margin-top: 20px;
 
+
 }
 
 .text-logo {
     grid-area: text-logo;
     text-align: center;
+    transition: 0.3s;
+}
 
+.text-logo:hover {
+    color: #FFDD0B;
+    transition: 0.3s;
 }
 
 .galleryWrapper {
@@ -155,7 +163,10 @@ body {
         ". text-logo .";
     text-align: center;
     font-size: 36px;
+    transition: 0.3s;
+
 }
+
 
 .links div>a {
     text-decoration: none;
@@ -210,7 +221,7 @@ div img {
 
 @media all and (min-width: 1024px) {
     .links div>a {
-        font-size: 40px;
+        font-size: 70px;
         text-decoration: none;
         font-weight: bold;
         font-family: 'Caveat', cursive;
