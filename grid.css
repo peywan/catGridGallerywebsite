@@ -11,7 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(12, 2fr);
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -172,7 +172,13 @@ body {
 }
 
 .footer {
-    background-color: grey;
+    background-color: rgb(205, 205, 205);
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFDD0B;
 }
 
 .footer div {
@@ -183,10 +189,14 @@ body {
     align-items: center;
     font-size: 50px;
     margin: 30px auto;
+    font-family: 'Caveat', cursive;
+    font-family: 'Lobster', sans-serif;
 }
 
 div img {
     max-width: 100%;
+    padding: 20px;
+    border-radius: 200px;
 }
 
 .galleryWrapper {
@@ -202,13 +212,17 @@ div img {
         font-size: 40px;
         text-decoration: none;
         font-weight: bold;
+        font-family: 'Caveat', cursive;
+        font-family: 'Lobster', sans-serif;
     }
 }
 
-@media all and (min-width: 354px) {
+@media all and (min-width: 454px) {
     .links div>a {
         font-size: 30px;
         text-decoration: none;
         font-weight: bold;
+        font-family: 'Caveat', cursive;
+        font-family: 'Lobster', sans-serif;
     }
 }
